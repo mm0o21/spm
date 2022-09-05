@@ -16,6 +16,7 @@
 		D10BF9C428C00DF600D9A453 /* spmTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BF9C328C00DF600D9A453 /* spmTests.swift */; };
 		D10BF9CE28C00DF600D9A453 /* spmUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BF9CD28C00DF600D9A453 /* spmUITests.swift */; };
 		D10BF9D028C00DF600D9A453 /* spmUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D10BF9CF28C00DF600D9A453 /* spmUITestsLaunchTests.swift */; };
+		D10BF9DE28C00FD700D9A453 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D10BF9DD28C00FD700D9A453 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D10BF9DE28C00FD700D9A453 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -143,6 +145,9 @@
 			dependencies = (
 			);
 			name = spm;
+			packageProductDependencies = (
+				D10BF9DD28C00FD700D9A453 /* PKHUD */,
+			);
 			productName = spm;
 			productReference = D10BF9A928C00DF400D9A453 /* spm.app */;
 			productType = "com.apple.product-type.application";
@@ -215,6 +220,9 @@
 				Base,
 			);
 			mainGroup = D10BF9A028C00DF400D9A453;
+			packageReferences = (
+				D10BF9DC28C00FD700D9A453 /* XCRemoteSwiftPackageReference "PKHUD" */,
+			);
 			productRefGroup = D10BF9AA28C00DF400D9A453 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -602,6 +610,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D10BF9DC28C00FD700D9A453 /* XCRemoteSwiftPackageReference "PKHUD" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/pkluz/PKHUD";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D10BF9DD28C00FD700D9A453 /* PKHUD */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D10BF9DC28C00FD700D9A453 /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = D10BF9A128C00DF400D9A453 /* Project object */;
 }
